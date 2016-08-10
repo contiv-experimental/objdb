@@ -71,6 +71,7 @@ func (ep *EtcdClient) RegisterService(serviceInfo ServiceInfo) error {
 		HostAddr:    serviceInfo.HostAddr,
 		Port:        serviceInfo.Port,
 		stopChan:    make(chan bool, 1),
+		Hostname:    serviceInfo.Hostname,
 	}
 
 	// Run refresh in background

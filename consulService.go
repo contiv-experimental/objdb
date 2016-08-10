@@ -127,6 +127,7 @@ func (cp *ConsulClient) RegisterService(serviceInfo ServiceInfo) error {
 		Port:        serviceInfo.Port,
 		SessionID:   sessionID,
 		stopChan:    stopChan,
+		Hostname:    serviceInfo.Hostname,
 	}
 
 	return nil
