@@ -1,2 +1,3 @@
-# objdb
-Object store client and API
+# DEPRECATED
+
+Please see https://github.com/contiv/netplugin/tree/master/objdb
